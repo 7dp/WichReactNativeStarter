@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "123098000610",
+    "project_id": "react-native-starter-kit-v2",
+    "storage_bucket": "react-native-starter-kit-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123098000610:android:2c5ba5fa50d1df9ca042bb",
+        "android_client_info": {
+          "package_name": "com.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123098000610-tigq5hi6rpd2ktkeffkl4r6ns5pvgef3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT3QqD0F6ptJvjLet3cTpm79XnhN6enqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123098000610-tigq5hi6rpd2ktkeffkl4r6ns5pvgef3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

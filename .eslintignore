@@ -1,0 +1,17 @@
+# don't ever lint node_modules
+node_modules
+
+android
+ios
+.idea
+.vscode
+
+# don't lint build output (make sure it's set to your correct build folder name)
+build
+
+.eslintrc.js
+babel.config.js
+metro.config.js
+react-native.config.js
+
+__tests__

@@ -1,0 +1,27 @@
+{
+  "common": {
+    "typeHere": "Ketik di sini",
+    "loading": "Sedang memuat...",
+    "failedToLoadData": "Gagal memuat data"
+  },
+  "imagePicker": {
+    "cancel": "Batal",
+    "apply": "Terapkan"
+  },
+  "errorFallback": {
+    "somethingWentWrong": "🙏\nMaaf, tiba-tiba terjadi kesalahan pada aplikasi",
+    "error": "Error:",
+    "backToApp": "Kembali ke aplikasi"
+  },
+  "login": {
+    "placeholderEmail": "youremail@email.com",
+    "placeholderPassword": "Ketik password kamu",
+    "welcome": "Selamat Datang!",
+    "password": "Kata sandi",
+    "email": "Email",
+    "login": "Login"
+  },
+  "home": {
+    "logout": "Logout"
+  }
+}
