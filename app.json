@@ -12,7 +12,13 @@
     },
     "runtimeVersion": "1.0.0",
     "updates": {
-      "url": "http://localhost:3000/api/manifest"
-    }
+      "url": "https://u.expo.dev/4f04c824-441d-49b4-abe5-8a60456fb29f"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4f04c824-441d-49b4-abe5-8a60456fb29f"
+      }
+    },
+    "owner": "wradiy"
   }
 }
