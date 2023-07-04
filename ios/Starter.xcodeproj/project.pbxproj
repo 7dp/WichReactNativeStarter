@@ -16,6 +16,7 @@
 		883B7C7B2A08F48A00E8C9E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 883B7C7A2A08F48A00E8C9E7 /* GoogleService-Info.plist */; };
 		8864B8732A0A0600001F0022 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8864B8712A0A0600001F0022 /* MaterialCommunityIcons.ttf */; };
 		8864B8742A0A0600001F0022 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8864B8722A0A0600001F0022 /* MaterialIcons.ttf */; };
+		88FFE3272A53FC5500EE355B /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88FFE3262A53FC5500EE355B /* Expo.plist */; };
 		C20383DDAA41FB2D593F0497 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE9B3C5058A6DBF14D2DBFD /* ExpoModulesProvider.swift */; };
 		C4CF66594283445DBCD1CCED /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4608112C564C98A1A7DC46 /* noop-file.swift */; };
 		C748844D3B25329E4495AE7E /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32BF9CEC6B6201ACAD7A361 /* ExpoModulesProvider.swift */; };
@@ -53,6 +54,7 @@
 		883B7C7A2A08F48A00E8C9E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Starter/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8864B8712A0A0600001F0022 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
 		8864B8722A0A0600001F0022 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		88FFE3262A53FC5500EE355B /* Expo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Starter-StarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter-StarterTests.release.xcconfig"; path = "Target Support Files/Pods-Starter-StarterTests/Pods-Starter-StarterTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF4608112C564C98A1A7DC46 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "Starter/noop-file.swift"; sourceTree = "<group>"; };
 		C32BF9CEC6B6201ACAD7A361 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Starter/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		13B07FAE1A68108700A75B9A /* Starter */ = {
 			isa = PBXGroup;
 			children = (
+				88FFE3252A53FC1500EE355B /* Supporting */,
 				8864B8702A0A05CA001F0022 /* Fonts */,
 				883B7C772A08EE7200E8C9E7 /* Starter.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -179,6 +182,14 @@
 				8864B8722A0A0600001F0022 /* MaterialIcons.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		88FFE3252A53FC1500EE355B /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				88FFE3262A53FC5500EE355B /* Expo.plist */,
+			);
+			name = Supporting;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -294,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FFE3272A53FC5500EE355B /* Expo.plist in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				8864B8742A0A0600001F0022 /* MaterialIcons.ttf in Resources */,

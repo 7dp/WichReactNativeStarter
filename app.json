@@ -1,4 +1,18 @@
 {
   "name": "Starter",
-  "displayName": "Starter"
+  "displayName": "Starter",
+  "expo": {
+    "name": "Starter",
+    "slug": "Starter",
+    "ios": {
+      "bundleIdentifier": "com.starter"
+    },
+    "android": {
+      "package": "com.starter"
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "http://localhost:3000/api/manifest"
+    }
+  }
 }

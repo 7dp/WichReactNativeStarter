@@ -2,6 +2,11 @@ require File.join(File.dirname(`node --print "require.resolve('expo/package.json
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
+# #region expo-updates setup
+require 'json'
+podfile_properties = JSON.parse(File.read(File.join(__dir__, 'Podfile.properties.json'))) rescue {}
+# #endregion
+
 platform :ios, '13.0'
 prepare_react_native_project!
 
@@ -41,7 +46,9 @@ target 'Starter' do
     # Upcoming versions of React Native may rely on get_default_flags(), but
     # we make it explicit here to aid in the React Native upgrade process.
 
-    :hermes_enabled => false,
+    # #region expo-updates setup
+    :hermes_enabled => :hermes_enabled => podfile_properties['expo.jsEngine'] == nil || podfile_properties['expo.jsEngine'] == 'hermes',
+    # #endregion
     :fabric_enabled => flags[:fabric_enabled],
     # Enables Flipper.
     #
