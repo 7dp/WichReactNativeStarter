@@ -47,7 +47,7 @@ target 'Starter' do
     # we make it explicit here to aid in the React Native upgrade process.
 
     # #region expo-updates setup
-    :hermes_enabled => :hermes_enabled => podfile_properties['expo.jsEngine'] == nil || podfile_properties['expo.jsEngine'] == 'hermes',
+    :hermes_enabled => podfile_properties['expo.jsEngine'] == nil || podfile_properties['expo.jsEngine'] == 'hermes',
     # #endregion
     :fabric_enabled => flags[:fabric_enabled],
     # Enables Flipper.
