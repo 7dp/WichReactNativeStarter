@@ -32,7 +32,7 @@
 | Vector Icons                   | v9.2    |
 | Toast Message                  | v2      |
 | Image Crop Picker              | v0.40   |
-| Keyboard Aware Scrollview      | v0.9    |
+| Keyboard Controller            | v1.5.7  |
 | React Error Boundary           | v4      |
 | DayJS                          | v1.11   |
 | Async Mutex                    | v0.4    |
