@@ -16,7 +16,7 @@
 		883B7C7B2A08F48A00E8C9E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 883B7C7A2A08F48A00E8C9E7 /* GoogleService-Info.plist */; };
 		8864B8732A0A0600001F0022 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8864B8712A0A0600001F0022 /* MaterialCommunityIcons.ttf */; };
 		8864B8742A0A0600001F0022 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8864B8722A0A0600001F0022 /* MaterialIcons.ttf */; };
-		88FFE3272A53FC5500EE355B /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88FFE3262A53FC5500EE355B /* Expo.plist */; };
+		88B0008D2A56CF55006E3577 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88B0008C2A56CF55006E3577 /* Expo.plist */; };
 		C20383DDAA41FB2D593F0497 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE9B3C5058A6DBF14D2DBFD /* ExpoModulesProvider.swift */; };
 		C4CF66594283445DBCD1CCED /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4608112C564C98A1A7DC46 /* noop-file.swift */; };
 		C748844D3B25329E4495AE7E /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32BF9CEC6B6201ACAD7A361 /* ExpoModulesProvider.swift */; };
@@ -54,7 +54,7 @@
 		883B7C7A2A08F48A00E8C9E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Starter/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8864B8712A0A0600001F0022 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
 		8864B8722A0A0600001F0022 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
-		88FFE3262A53FC5500EE355B /* Expo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		88B0008C2A56CF55006E3577 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Expo.plist; path = Starter/Supporting/Expo.plist; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Starter-StarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter-StarterTests.release.xcconfig"; path = "Target Support Files/Pods-Starter-StarterTests/Pods-Starter-StarterTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF4608112C564C98A1A7DC46 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "Starter/noop-file.swift"; sourceTree = "<group>"; };
 		C32BF9CEC6B6201ACAD7A361 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Starter/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		13B07FAE1A68108700A75B9A /* Starter */ = {
 			isa = PBXGroup;
 			children = (
-				88FFE3252A53FC1500EE355B /* Supporting */,
+				88B0008C2A56CF55006E3577 /* Expo.plist */,
 				8864B8702A0A05CA001F0022 /* Fonts */,
 				883B7C772A08EE7200E8C9E7 /* Starter.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -184,14 +184,6 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
-		88FFE3252A53FC1500EE355B /* Supporting */ = {
-			isa = PBXGroup;
-			children = (
-				88FFE3262A53FC5500EE355B /* Expo.plist */,
-			);
-			name = Supporting;
-			sourceTree = "<group>";
-		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +215,7 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				C5B96E1FFE54F361F7F076CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +240,7 @@
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 				EA4D6D1B2CC103972F950E43 /* [CP-User] [RNFB] Core Configuration */,
 				9C11F4720C125D83161372E8 /* [CP-User] [RNFB] Crashlytics Configuration */,
+				9EF072CE4F85E9179059168B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,7 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FFE3272A53FC5500EE355B /* Expo.plist in Resources */,
+				88B0008D2A56CF55006E3577 /* Expo.plist in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				8864B8742A0A0600001F0022 /* MaterialIcons.ttf in Resources */,
@@ -346,6 +340,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\nif [[ ${PODS_ROOT} ]]; then\n  echo \"info: Exec FirebaseCrashlytics Run from Pods\"\n  \"${PODS_ROOT}/FirebaseCrashlytics/run\"\nelse\n  echo \"info: Exec FirebaseCrashlytics Run from framework\"\n  \"${PROJECT_DIR}/FirebaseCrashlytics.framework/run\"\nfi\n";
+		};
+		9EF072CE4F85E9179059168B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starter/Pods-Starter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starter/Pods-Starter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Starter/Pods-Starter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -389,6 +400,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B96E1FFE54F361F7F076CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starter-StarterTests/Pods-Starter-StarterTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starter-StarterTests/Pods-Starter-StarterTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Starter-StarterTests/Pods-Starter-StarterTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
@@ -645,7 +673,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -717,7 +745,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
