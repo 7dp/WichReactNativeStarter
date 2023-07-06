@@ -1,14 +1,14 @@
-import { Button, TextInput } from '@/components'
+import { Button, KeyboardAwareScrollView, TextInput } from '@/components'
 import { t } from '@/i18n'
 import { StackParams } from '@/navigator'
+import { authActions } from '@/store/slices'
 import { commonStyles } from '@/styles'
 import { setFocus } from '@/utils'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import React, { FC, useRef, useState } from 'react'
-import { TextInput as RNTextInput, View } from 'react-native'
-import { style } from './style'
+import { TextInput as RNTextInput } from 'react-native'
 import { useDispatch } from 'react-redux'
-import { authActions } from '@/store/slices'
+import { style } from './style'
 
 const LoginScreen: FC<NativeStackScreenProps<StackParams, 'Login'>> = ({
   navigation,
@@ -32,7 +32,12 @@ const LoginScreen: FC<NativeStackScreenProps<StackParams, 'Login'>> = ({
 
   // #region Renders
   return (
-    <View style={[commonStyles.screen, commonStyles.centerVertical]}>
+    <KeyboardAwareScrollView
+      scrollViewProps={{
+        contentContainerStyle: style.root,
+        style: commonStyles.flex,
+      }}
+    >
       <TextInput
         label={t('login.email')}
         inputProps={{
@@ -62,7 +67,7 @@ const LoginScreen: FC<NativeStackScreenProps<StackParams, 'Login'>> = ({
         text={t('login.login')}
         props={{ style: style.button, disabled: isDisabled(), onPress: login }}
       />
-    </View>
+    </KeyboardAwareScrollView>
   )
 }
 
