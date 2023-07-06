@@ -7,6 +7,7 @@ import {
 } from '@react-navigation/native'
 import React, { FC, useEffect } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
+import { KeyboardProvider } from 'react-native-keyboard-controller'
 import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context'
 import { enableScreens } from 'react-native-screens'
 import RNToast, { ToastConfig } from 'react-native-toast-message'
@@ -111,21 +112,23 @@ const App: FC<JSX.Element> = () => {
 
   return (
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-      <Provider store={store}>
-        <PersistGate persistor={persistor}>
-          <ErrorBoundary FallbackComponent={ErrorFallback} onError={onError}>
-            <NavigationContainer
-              ref={navigationContainerRef}
-              onStateChange={(state) => {
-                console.log('CURRENT SCREEN:', state?.routes[state.index].name)
-              }}
-            >
-              <StackNavigator />
-              <RNToast config={toastConfig} />
-            </NavigationContainer>
-          </ErrorBoundary>
-        </PersistGate>
-      </Provider>
+      <KeyboardProvider>
+        <Provider store={store}>
+          <PersistGate persistor={persistor}>
+            <ErrorBoundary FallbackComponent={ErrorFallback} onError={onError}>
+              <NavigationContainer
+                ref={navigationContainerRef}
+                onStateChange={(state) => {
+                  console.log('CURRENT SCREEN:', state?.routes[state.index].name)
+                }}
+              >
+                <StackNavigator />
+                <RNToast config={toastConfig} />
+              </NavigationContainer>
+            </ErrorBoundary>
+          </PersistGate>
+        </Provider>
+      </KeyboardProvider>
     </SafeAreaProvider>
   )
 }
