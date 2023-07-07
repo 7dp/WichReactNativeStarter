@@ -22,6 +22,6 @@
     "target": "esnext"
   },
   "exclude": ["node_modules"],
-  "include": ["index.js", "src", "test"],
+  "include": ["index.js", "src", "test", "jest.config.js"],
   "extends": "expo/tsconfig.base"
 }
