@@ -19,7 +19,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/*.{ts,tsx,js,jsx,json}": [
+    "src/*.{ts,tsx,js,jsx}": [
       "eslint --fix"
     ],
     "index.js": [
