@@ -2,7 +2,8 @@
   "common": {
     "typeHere": "Type here",
     "loading": "Loading...",
-    "failedToLoadData": "Failed to load data"
+    "failedToLoadData": "Failed to load data",
+    "youOffline": "You are offline. Check your internet connection."
   },
   "imagePicker": {
     "cancel": "Cancel",

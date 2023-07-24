@@ -14,7 +14,7 @@ import { enableScreens } from 'react-native-screens'
 import RNToast, { ToastConfig } from 'react-native-toast-message'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
-import { ChuckerButton, ErrorFallback, Toast } from './components'
+import { ChuckerButton, ErrorFallback, NetworkInfo, Toast } from './components'
 import { StackNavigator, StackParams } from './navigator'
 import {
   Notification,
@@ -126,6 +126,7 @@ const App: FC<JSX.Element> = () => {
                 }}
               >
                 <StackNavigator />
+                <NetworkInfo />
                 <RNToast config={toastConfig} />
                 <ChuckerButton />
               </NavigationContainer>

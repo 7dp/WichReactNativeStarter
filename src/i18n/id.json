@@ -2,7 +2,8 @@
   "common": {
     "typeHere": "Ketik di sini",
     "loading": "Sedang memuat...",
-    "failedToLoadData": "Gagal memuat data"
+    "failedToLoadData": "Gagal memuat data",
+    "youOffline": "Kamu offline. Periksa kembali koneksi internetmu."
   },
   "imagePicker": {
     "cancel": "Batal",
