@@ -33,7 +33,7 @@ const toastConfig: ToastConfig = {
 }
 
 const App: FC<JSX.Element> = () => {
-  useKeepAwake()
+  __DEV__ && useKeepAwake()
 
   useEffect(() => {
     /**
