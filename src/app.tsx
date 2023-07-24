@@ -5,6 +5,7 @@ import {
   NavigationContainer,
   createNavigationContainerRef,
 } from '@react-navigation/native'
+import { useKeepAwake } from 'expo-keep-awake'
 import React, { FC, useEffect } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
 import { KeyboardProvider } from 'react-native-keyboard-controller'
@@ -32,6 +33,8 @@ const toastConfig: ToastConfig = {
 }
 
 const App: FC<JSX.Element> = () => {
+  useKeepAwake()
+
   useEffect(() => {
     /**
      * Platform: Android
