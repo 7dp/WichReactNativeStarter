@@ -1,5 +1,6 @@
 export * from './bottom-sheet'
 export * from './button'
+export * from './chucker-button'
 export * from './dropdown'
 export * from './error-fallback'
 export * from './keyboard-aware-scroll-view'

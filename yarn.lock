@@ -8057,6 +8057,11 @@ react-native-modal-dropdown@^1.0.2:
   dependencies:
     prop-types "^15.6.0"
 
+react-native-network-logger@^1.15.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/react-native-network-logger/-/react-native-network-logger-1.15.0.tgz#e333ac57f19875a5d4d797498b144a42b37e8a1e"
+  integrity sha512-/nxAC6iCWf7dwD4LB6hTV64P/wnMj75oSDxgKKSJXDO1m0yGiZwMQzC9fcAydMM9lqKWRS5T4jPUPinZNu7VOQ==
+
 react-native-pressable-scale@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-native-pressable-scale/-/react-native-pressable-scale-2.1.0.tgz#c33d6d5b5eb9da98c63b3492c192cb5cc4f65f8c"

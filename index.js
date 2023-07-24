@@ -1,13 +1,13 @@
-import notifee, { EventType } from '@notifee/react-native'
+import notifee from '@notifee/react-native'
 import messaging from '@react-native-firebase/messaging'
 import { AppRegistry, Platform } from 'react-native'
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
+import { startNetworkLogging } from 'react-native-network-logger'
 import { name as appName } from './app.json'
-import App, { navigationContainerRef } from './src/app'
+import App from './src/app'
 import { Notification } from './src/services/notification'
 import { dispatchStore } from './src/store'
 import { authActions } from './src/store/slices'
-import { isIOS } from './src/utils'
 
 // FCM
 async function askNotificationPermission() {
@@ -41,4 +41,5 @@ messaging().setBackgroundMessageHandler(async (message) => {
   console.log('setBackgroundMessageHandler:', JSON.stringify(message, null, 2))
 })
 
+startNetworkLogging()
 AppRegistry.registerComponent(appName, () => gestureHandlerRootHOC(App))
