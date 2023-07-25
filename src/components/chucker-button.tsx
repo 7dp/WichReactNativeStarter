@@ -1,6 +1,5 @@
 import { navigationContainerRef } from '@/app'
-import { Colors, commonStyles, size } from '@/styles'
-import { WINDOW_HEIGHT } from '@gorhom/bottom-sheet'
+import { Colors, commonStyles, size, windowHeight } from '@/styles'
 import React from 'react'
 import { StyleSheet, TouchableHighlight } from 'react-native'
 import { VectorIcon } from './vector-icon'
@@ -28,7 +27,7 @@ const style = StyleSheet.create({
     borderRadius: size['20px'],
     padding: size['8px'],
     position: 'absolute',
-    top: WINDOW_HEIGHT / 3,
+    top: windowHeight / 3,
   },
 })
 
